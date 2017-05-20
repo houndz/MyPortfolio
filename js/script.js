@@ -22,6 +22,9 @@ $(document).ready(function() {
 	$("#section1").css("width", "100%");
 	$("#section1").fadeIn();
 	$(".content1").fadeIn();
+	$(".title-wrapper h1").addClass('animated fadeInDown');
+	$(".title-wrapper h1 i").addClass('animated fadeIn');
+	$(".menu a").addClass('animated fadeInDown');
 
 // Section 1	
 	$(".content1 .section-2").on("click", function() {
@@ -49,6 +52,7 @@ $(document).ready(function() {
 					width: "100%"
 				}, function() {
 					$(".content2").fadeIn(300);
+					
 				});
 			});
 		}, 800);
@@ -79,6 +83,7 @@ $(document).ready(function() {
 					width: "100%"
 				}, function() {
 					$(".content3").fadeIn(300);
+
 				});
 			});
 		}, 800);

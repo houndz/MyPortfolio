@@ -17,18 +17,9 @@ h1 {
     margin-top: 120px;
 }
 
-.main-wrapper {
-    background-color: red;
-}
-
 .menu {
-    position: absolute;
+    float: left;
     margin-left: 20px;
-    
-}
-
-.menu a {
-    color: #fff;
 }
 
 .menu a.home, 
@@ -39,8 +30,6 @@ h1 {
     color: #fff;
     padding: 10px 10px;
     text-align: center;
-    margin: 25px auto;
-    width: 13%;
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
@@ -55,6 +44,24 @@ h1 {
     cursor: default;
     border: 1px solid #fff;
 }
+
+.menu a.home {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+.menu a.section-2 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.3s;
+}
+.menu a.section-3 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+}
+.menu a.section-4 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.7s;
+}
+
 
 
 .menu a.home:hover, 
@@ -77,8 +84,6 @@ a.home, a.section-2, a.section-3, a.section-4 {
     border: 3px solid #fff;
     padding: 10px 10px;
     text-align: center;
-    margin: 25px auto;
-    width: 13%;
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
@@ -115,6 +120,7 @@ a.section-4:hover {
     margin: auto;
     display: none;
     background-color: #04060a;
+    text-align: center;
 }
 
 
@@ -128,11 +134,23 @@ a.section-4:hover {
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
     font-weight: 600;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+}
+
+.title-wrapper h1 i {
+    background: -webkit-linear-gradient(#10ed4f, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 .title-wrapper p {
     color: #4c514e;
     text-align: center;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 
@@ -156,14 +174,22 @@ a.section-4:hover {
 
 .layout h1 {
     margin-top: 230px;
-    font-family: 'PT Serif Caption', serif;
-    font-size: 100px;
-    text-shadow: 3px 3px 4px #000;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 80px;
+    text-shadow: 5px 5px 4px #000;
     color: #fff;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
 }
 
+
 hr {
-   margin-bottom: 40px; 
+    margin: 40px 40px;
+}
+
+.project a.project-link, .layout a.layout-link {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
 }
 
 .layout-link, .project-link {
@@ -173,6 +199,7 @@ hr {
     padding: 10px 20px;
     position: relative;
     z-index:2;
+    
 }
 
 .layout-link:after, .project-link:after {
@@ -217,10 +244,12 @@ hr {
 
 .project h1 {
     margin-top: 230px;
-    font-family: 'PT Serif Caption', serif;
+    font-family: 'Fontdiner Swanky', cursive;
     font-size: 100px;
-    text-shadow: 3px 3px 4px #000;
+    text-shadow: 5px 5px 4px #000;
     color: #fff;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
 }
 
 /* Section 4
@@ -243,10 +272,13 @@ hr {
     font-family: 'Playfair Display SC', serif;
 }
 
-.contact-wrapper .about-me-wrapper h1 {
+.contact-wrapper .contact h1 {
     color: #fff;
+    text-shadow: 5px 5px 4px #000;
     font-size: 80px;
-    font-family: 'PT Serif Caption', serif;
+    font-family: 'Fontdiner Swanky', cursive;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
 }
 
 h4 {
@@ -258,28 +290,54 @@ h4 {
 .email {
     font-family: 'Lora', serif;
     font-weight: 0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
-.contact-wrapper .about-me-wrapper p {
+.contact-wrapper .contact p {
     margin-bottom: 20px;
 }
 
-.contact-wrapper .about-me-wrapper ul li{
+.contact-wrapper .contact ul li{
     display: inline-block;
-    padding: 20px;
+    padding: 0px 20px;
     font-size: 30px;
 }
 
-.contact-wrapper .about-me-wrapper ul li a {
+.contact-wrapper .contact ul li a {
     color: #fff;
 }
 
-.contact-wrapper .about-me-wrapper ul li a:hover {
+.contact-wrapper .contact ul li a:hover {
     color: #035399;
 }
 
-.small-text {
+.small-text, .contact p i {
     font-size: 80%;
     color: #4c514e;
+}
+
+@media screen and (max-width: 770px) {
+    .content1 .title-wrapper h1 {font-size: 50px;}
+    .layout h1, 
+    .project h1,
+    .contact-wrapper .contact h1 {font-size: 60px;}
+    .menu {float: none; margin-left: 0;}
+}
+
+@media screen and (max-width: 380px) {
+    .title-wrapper h1,
+    .layout h1,
+    .project h1 {font-size: 40px;}
+    .contact-wrapper > * {font-size: 60%;}
+    .contact-wrapper .contact h1 {font-size: 40px;}
+    .contact hr {margin-bottom: 5px;}
+    .menu {display: flex; justify-content: space-between; margin: 0 10px;}
+    .menu a.home, 
+    .menu a.section-2, 
+    .menu a.section-3,
+    .menu a.section-4 {padding: 10px 5px; font-size: 12px;}
+    .content1 .title-wrapper h1 {font-size: 35px; margin-top: 80px;}
+    .layout h1, 
+    .project h1,
+    .contact-wrapper .contact h1 {margin-top: 80px;}
 }

@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$(".menu a").addClass('animated fadeInDown');
 
 // Section 1	
-	$(".content1 .section-2").on("click", function() {
+	$(".content1 .section-2").click(function() {
 		$(".content1").fadeOut();
 		$("#section1").animate({
 			width: "25px",
@@ -58,7 +58,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".content1 .section-3").on("click", function() {
+	$(".content1 .section-3").click(function() {
 		$(".content1").fadeOut();
 		$("#section1").animate({
 			width: "25px",
@@ -89,7 +89,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".content1 .section-4").on("click", function() {
+	$(".content1 .section-4").click(function() {
 		$(".content1").fadeOut();
 		$("#section1").animate({
 			width: "25px",
@@ -120,7 +120,7 @@ $(document).ready(function() {
 	});
 
 // Section 2
-	$(".content2 .home").on("click", function() {
+	$(".content2 .home").click(function() {
 		$(".content2").fadeOut();
 		$("#section2").animate({
 			width: "25px",
@@ -150,7 +150,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".content2 .section-4").on("click", function() {
+	$(".content2 .section-4").click(function() {
 		$(".content2").fadeOut();
 		$("#section2").animate({
 			width: "25px",
@@ -182,7 +182,7 @@ $(document).ready(function() {
 
 
 
-	$(".content2 .section-3").on("click", function() {
+	$(".content2 .section-3").click(function() {
 		$(".content2").fadeOut();
 		$("#section2").animate({
 			width: "25px",
@@ -215,7 +215,7 @@ $(document).ready(function() {
 	
 
 // Section 3
-	$(".content3 .home").on("click", function() {
+	$(".content3 .home").click(function() {
 		$(".content3").fadeOut();
 		$("#section3").animate({
 			width: "25px",
@@ -245,7 +245,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".content3 .section-2").on("click", function() {
+	$(".content3 .section-2").click(function() {
 		$(".content3").fadeOut();
 		$("#section3").animate({
 			width: "25px",
@@ -275,7 +275,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 	
-	$(".content3 .section-4").on("click", function() {
+	$(".content3 .section-4").click(function() {
 		$(".content3").fadeOut();
 		$("#section3").animate({
 			width: "25px",
@@ -306,7 +306,7 @@ $(document).ready(function() {
 	});
 
 	// Section 4
-	$(".content4 .home").on("click", function() {
+	$(".content4 .home").click(function() {
 		$(".content4").fadeOut();
 		$("#section4").animate({
 			width: "25px",
@@ -336,7 +336,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".content4 .section-2").on("click", function() {
+	$(".content4 .section-2").click(function() {
 		$(".content4").fadeOut();
 		$("#section4").animate({
 			width: "25px",
@@ -366,7 +366,7 @@ $(document).ready(function() {
 		}, 800);
 	});
 	
-	$(".content4 .section-3").on("click", function() {
+	$(".content4 .section-3").click(function() {
 		$(".content4").fadeOut();
 		$("#section4").animate({
 			width: "25px",

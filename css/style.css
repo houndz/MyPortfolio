@@ -72,7 +72,8 @@ h1 {
     color: #fff;
 } 
 
-.content1, .content2, .content3, .content4 {
+.content1 {padding-top: 40px;}
+.content2, .content3, .content4 {
     padding-top: 40px;
     display: none;
 }
